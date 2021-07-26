@@ -1,12 +1,28 @@
+@import url(//db.onlinewebfonts.com/c/240a7cb10b49b02c94ceddc459d385a9?family=Gagalin);
+
+
+@font-face {font-family: "Gagalin"; src: url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.eot"); 
+    src: url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.svg#Gagalin") format("svg"); 
+}
+
 :root {
     --primary-color: #1d5888;
-    --secondary-color: #ff993b;
+    --secondary-color: #ff1616;
     --dark-color: #292929;
     --white-color: #e7e7e7;
 }
 
 body {
     color: var(--dark-color);
+}
+
+nav .navbar-brand {
+    
+    font-family: Gagalin;
 }
 
 nav {
