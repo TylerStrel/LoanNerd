@@ -1,28 +1,13 @@
-@import url(//db.onlinewebfonts.com/c/240a7cb10b49b02c94ceddc459d385a9?family=Gagalin);
-
-
-@font-face {font-family: "Gagalin"; src: url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.eot"); 
-    src: url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/240a7cb10b49b02c94ceddc459d385a9.svg#Gagalin") format("svg"); 
-}
-
 :root {
     --primary-color: #1d5888;
-    --secondary-color: #ff1616;
+    --secondary-color: #ff6b00;
     --dark-color: #292929;
     --white-color: #e7e7e7;
 }
 
 body {
     color: var(--dark-color);
-}
-
-nav .navbar-brand {
-    
-    font-family: Gagalin;
+    overflow-x: hidden;
 }
 
 nav {
@@ -81,4 +66,8 @@ code [class*="language-"],
 
 main>.container {
     padding: 60px 15px 0;
+}
+
+.devicon{
+    font-size: 4rem;
 }
