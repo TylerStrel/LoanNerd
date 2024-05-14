@@ -1,14 +1,11 @@
-# Use the official Nginx image from the Docker Hub
-FROM nginx:alpine
+# Use the official Nginx image from Docker Hub
+FROM nginx:stable-alpine
 
-# Remove the default Nginx configuration file
-RUN rm /etc/nginx/conf.d/default.conf
+# Copy the static content of your site into the default Nginx serve directory
+COPY .. /usr/share/nginx/html
 
-# Copy the entire project directory (including subdirectories) to the Nginx server
-COPY . /usr/share/nginx/html
-
-# Expose port 80 to the outside once the container has launched
+# Expose port 80 for HTTP traffic
 EXPOSE 80
 
-# Start Nginx and keep it running in the foreground
+# Run Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
